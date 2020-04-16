@@ -11,5 +11,5 @@ controlar suas turmas e pagamentos online.
 * JESSICA MAYUMI TANISUE MEDEIROS (jessmayumi.tm@gmail.com)
 * EVANDRO TAYLOR SOUZA DA SILVA 
 * TALES DE OLIVEIRA MACEDO (talesmacedo1@gmail.com)
-* JORDNEI GADELHA DA SILVA (jordneig@mail.com)
+* JORDNEI GADELHA DA SILVA (jordneig@gmail.com)
 * RENZO DIAS TAKADA 
