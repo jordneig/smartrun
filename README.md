@@ -1,8 +1,8 @@
 # Nome do Projeto:
 SmartRun (SRun)
 #  Descrição:
-Aplicativo que permita o prestador de serviços de assessorias esportiva
-controlando suas turmas e pagamentos online.
+Aplicativo que permita o prestador de serviços de assessorias esportivas
+controlar suas turmas e pagamentos online.
 #  Principais funcionalidades:
 * Disponibilizar o status da agenda da assessoria
 * Automatizar os pagamentos e assegurar as transações nas datas corretas
