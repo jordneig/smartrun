@@ -9,7 +9,7 @@ controlar suas turmas e pagamentos online.
 * Possibilitar agendamentos de aulas para alunos fora das turmas fixas.
 #  Equipe: 
 * JESSICA MAYUMI TANISUE MEDEIROS (jessmayumi.tm@gmail.com)
-* EVANDRO TAYLOR SOUZA DA SILVA (talesmacedo1@gmail.com)
-* TALES DE OLIVEIRA MACEDO
-* JORDNEI GADELHA DA SILVA
-* RENZO DIAS TAKADA
+* EVANDRO TAYLOR SOUZA DA SILVA 
+* TALES DE OLIVEIRA MACEDO (talesmacedo1@gmail.com)
+* JORDNEI GADELHA DA SILVA (jordneig@mail.com)
+* RENZO DIAS TAKADA 
