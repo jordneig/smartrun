@@ -8,7 +8,7 @@ controlar suas turmas e pagamentos online.
 * Automatizar os pagamentos e assegurar as transações nas datas corretas
 * Possibilitar agendamentos de aulas para alunos fora das turmas fixas.
 #  Equipe: 
-* JESSICA MAYUMI TANISUE MEDEIROS
+* JESSICA MAYUMI TANISUE MEDEIROS (jessmayumi.tm@gmail.com)
 * EVANDRO TAYLOR SOUZA DA SILVA
 * TALES DE OLIVEIRA MACEDO
 * JORDNEI GADELHA DA SILVA
