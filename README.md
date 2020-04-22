@@ -6,13 +6,15 @@ SmartRun é um aplicativo mobile que visa facilitar as atividades da assessoria 
 ## Principais funcionalidades:
 * Disponibilizar o status da agenda da assessoria
 * Automatizar os pagamentos e assegurar as transações nas datas corretas
-* Possibilitar agendamentos de aulas para alunos fora das turmas fixas.
-##  Autores: 
+* Possibilitar agendamentos de aulas para alunos fora das turmas fixas
+* Facilitar o controle de turmas e alunos
+* Controlar os agendamentos de forma mais fácil e organizada
 
+##  Autores: 
 | Nome                            | E-mail                   |
 | ------------------------------- | ------------------------ |
 | Jéssica Mayumi Tanisue Medeiros | jessmayumi.tm@gmail.com  |
 | Evandro Taylor Souza da Silva   | evandrotaylor4@gmail.com |
 | Tales de Oliveira Macedo        | talesmacedo1@gmail.com   |
 | Jordnei Gadelha da Silva        | jordneig@gmail.com       |
-| Renzo Dias Takada               |                          | 
+| Renzo Dias Takada               | renzotakada1@gmail.com   | 
