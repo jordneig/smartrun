@@ -1,6 +1,6 @@
 ![identidade_visual](https://user-images.githubusercontent.com/45128884/80030543-b98e8800-84be-11ea-8b3b-3733123272c3.png)
 
-                                                            SmartRun 
+                                                           #SmartRun 
 SmartRun é um aplicativo mobile que visa facilitar as atividades da assessoria esportiva na sua organização,permitindo gerenciar as planilhas de seus alunos, seus treinos e automatizando todo o processo de agendamentos dos mesmos, além de assegurar seus pagamentos.
 
 ## Principais funcionalidades:
