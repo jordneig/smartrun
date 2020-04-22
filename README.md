@@ -1,3 +1,5 @@
+![WhatsApp Image 2020-04-22 at 16 35 49](https://user-images.githubusercontent.com/45464861/80025685-67963400-84b7-11ea-80e7-a50f4383ec0f.jpeg)
+
 #  SmartRun (SRun)
 Aplicativo mobile que permite o prestador de serviços de assessorias esportivas
 controlar suas turmas e pagamentos online.
