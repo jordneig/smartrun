@@ -1,9 +1,8 @@
 
-![WhatsApp Image 2020-04-22 at 16 35 49](https://user-images.githubusercontent.com/45464861/80025947-bd6adc00-84b7-11ea-98e3-1be8aa4a22c7.jpeg)
 
-#  SmartRun (SRun)
-Aplicativo mobile que permite o prestador de serviços de assessorias esportivas
-controlar suas turmas e pagamentos online.
+#  SmartRun 
+SmartRun é um aplicativo mobile que visa facilitar as atividades da assessoria esportiva na sua organização,permitindo gerenciar as planilhas de seus alunos, seus treinos e automatizando todo o processo de agendamentos dos mesmos, além de assegurar seus pagamentos.
+
 ## Principais funcionalidades:
 * Disponibilizar o status da agenda da assessoria
 * Automatizar os pagamentos e assegurar as transações nas datas corretas
