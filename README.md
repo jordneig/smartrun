@@ -1,15 +1,16 @@
-# Nome do Projeto:
-SmartRun (SRun)
-#  Descrição:
-Aplicativo que permita o prestador de serviços de assessorias esportivas
+#  SmartRun (SRun)
+Aplicativo mobile que permite o prestador de serviços de assessorias esportivas
 controlar suas turmas e pagamentos online.
 #  Principais funcionalidades:
 * Disponibilizar o status da agenda da assessoria
 * Automatizar os pagamentos e assegurar as transações nas datas corretas
 * Possibilitar agendamentos de aulas para alunos fora das turmas fixas.
-#  Equipe: 
-* JESSICA MAYUMI TANISUE MEDEIROS (jessmayumi.tm@gmail.com)
-* EVANDRO TAYLOR SOUZA DA SILVA (evandrotaylor4@gmail.com)
-* TALES DE OLIVEIRA MACEDO (talesmacedo1@gmail.com)
-* JORDNEI GADELHA DA SILVA (jordneig@gmail.com)
-* RENZO DIAS TAKADA 
+#  Autores: 
+
+| Nome                            | E-mail                   |
+| ------------------------------- | ------------------------ |
+| Jéssica Mayumi Tanisue Medeiros | jessmayumi.tm@gmail.com  |
+| Evandro Taylor Souza da Silva   | evandrotaylor4@gmail.com |
+| Tales de Oliveira Macedo        | talesmacedo1@gmail.com   |
+| Jordnei Gadelha da Silva        | jordneig@gmail.com       |
+| Renzo Dias Takada               |                          | 
