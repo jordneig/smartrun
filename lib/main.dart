@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:smartrun/menu.dart';
-import 'package:smartrun/perfil.dart';
+import 'DataTableDemo.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(
+    new HomeApp());
+}
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class HomeApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MenuDashboards(),
+      debugShowCheckedModeBanner: false,
+      title: 'SmartRun',
+      home: new DataTableDemo()
     );
+    
   }
 }
