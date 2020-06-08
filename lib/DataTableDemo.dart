@@ -134,30 +134,79 @@ class DataTableDemoState extends State<DataTableDemo> {
   }
  
   // Let's create a DataTable and show the employee list in it.
-  SingleChildScrollView _dataBody() {
-    // Both Vertical and Horozontal Scrollview for the DataTable to
-    // scroll both Vertical and Horizontal...
-    return SingleChildScrollView(
-      scrollDirection: Axis.vertical,
-      child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: DataTable(
-          columns: [
-            DataColumn(
-              label: Text('ID'),
+ 
+  // UI
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      key: _scaffoldKey,
+      appBar: AppBar(
+        title: Text(_titleProgress), // we show the progress in the title...
+        actions: <Widget>[
+          IconButton(
+           icon: Icon(Icons.add),
+            onPressed: () {
+              _createTable();
+              _addEmployee();
+            },
+          ),
+           IconButton(
+            icon: Icon(Icons.refresh),
+            onPressed: () {
+              _getEmployees();
+            },
+          )
+       ],
+      ),
+      body: 
+        SingleChildScrollView(
+        child:Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            TableCalendar(
+              calendarStyle: CalendarStyle(
+                todayColor: Colors.amber
+              ),
+              headerStyle: HeaderStyle(
+                centerHeaderTitle: true
+              ),
+              calendarController: _controller,),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: TextField(
+                controller: _firstNameController,
+                decoration: InputDecoration.collapsed(
+                  hintText: 'Nome da turma',
+                ),
+              ),
             ),
-            DataColumn(
-              label: Text('FIRST NAME'),
+            Padding(
+              padding: EdgeInsets.all(20.0),
+              child: TextField(
+                controller: _lastNameController,
+                decoration: InputDecoration.collapsed(
+                  hintText: 'Treino',
+                ),
+              ),
             ),
-            DataColumn(
-              label: Text('LAST NAME'),
-            ),
-            // Uma coluna pra mostrar o button Delete
-            DataColumn(
-              label: Text('DELETE'),
-            )
-          ],
-          rows: _employees
+            
+            DataTable(
+            columns: [
+              DataColumn(
+                label: Text('ID'),
+              ),
+              DataColumn(
+                label: Text('TURMA'),
+              ),
+              DataColumn(
+                label: Text('TREINO'),
+              ),
+              // Uma coluna pra mostrar o button Delete
+              DataColumn(
+                label: Text('DELETE'),
+              )
+            ],
+            rows: _employees
               .map(
                 (employee) => DataRow(cells: [
                   DataCell(
@@ -208,68 +257,19 @@ class DataTableDemoState extends State<DataTableDemo> {
                   ))
                 ]),
               )
-              .toList(),
-        ),
-      ),
-    );
-  }
- 
-  // UI
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      key: _scaffoldKey,
-      appBar: AppBar(
-        title: Text(_titleProgress), // we show the progress in the title...
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.add),
-            onPressed: () {
-              _createTable();
-              _addEmployee();
-            },
-          ),
-          IconButton(
-            icon: Icon(Icons.refresh),
-            onPressed: () {
-              _getEmployees();
-            },
-          )
-        ],
-      ),
-        body: 
-        Container(
-          child: Column(
-           mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              TableCalendar(
-                 calendarStyle: CalendarStyle(
-                 todayColor: Colors.amber
-               ),
-                headerStyle: HeaderStyle(
-                 centerHeaderTitle: true
-              ),
-              calendarController: _controller,),
-            Padding(
-              padding: EdgeInsets.all(20.0),
-              child: TextField(
-                controller: _firstNameController,
-                decoration: InputDecoration.collapsed(
-                  hintText: 'First Name',
+              .toList(),),
+            Card(
+              child: Container(
+                child: Column(
+                  children: <Widget>[
+                      const ListTile(
+                        title: Text('Turma yXXXXX'),
+                        subtitle: Text('Parque do Utinga'),
+                      ),
+                  ],
                 ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.all(20.0),
-              child: TextField(
-                controller: _lastNameController,
-                decoration: InputDecoration.collapsed(
-                  hintText: 'Last Name',
-                ),
-              ),
-            ),
-
-            // show these buttons only when updating an employee
             _isUpdating
                 ? Row(
                     children: <Widget>[
@@ -290,14 +290,18 @@ class DataTableDemoState extends State<DataTableDemo> {
                       ),
                     ],
                   )
-                : Container(),
-            Expanded(
-              child: _dataBody(),
-            ),
-            ],
-        ),
-      ),
-    );
+                : Container(),     
+          ],
+          
+          ),
+           
+          
+        
+                   
+        )
+            
+            
+        );
+      
   }
 }
-           
