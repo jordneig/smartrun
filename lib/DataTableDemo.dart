@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'widgets/Employee.dart';
 import 'widgets/Services.dart';
+import 'package:table_calendar/table_calendar.dart';
 void main() {
   runApp(DataTableDemo());
 }
@@ -17,6 +18,7 @@ class DataTableDemo extends StatefulWidget {
 }
  
 class DataTableDemoState extends State<DataTableDemo> {
+  CalendarController _controller;
   List<Employee> _employees;
   GlobalKey<ScaffoldState> _scaffoldKey;
   // controller for the First Name TextField we are going to create.
@@ -30,6 +32,7 @@ class DataTableDemoState extends State<DataTableDemo> {
   @override
   void initState() {
     super.initState();
+    _controller = CalendarController();
     _employees = [];
     _isUpdating = false;
     _titleProgress = widget.title;
@@ -149,7 +152,7 @@ class DataTableDemoState extends State<DataTableDemo> {
             DataColumn(
               label: Text('LAST NAME'),
             ),
-            // Lets add one more column to show a delete button
+            // Uma coluna pra mostrar o button Delete
             DataColumn(
               label: Text('DELETE'),
             )
@@ -223,6 +226,7 @@ class DataTableDemoState extends State<DataTableDemo> {
             icon: Icon(Icons.add),
             onPressed: () {
               _createTable();
+              _addEmployee();
             },
           ),
           IconButton(
@@ -233,10 +237,19 @@ class DataTableDemoState extends State<DataTableDemo> {
           )
         ],
       ),
-      body: Container(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+        body: 
+        Container(
+          child: Column(
+           mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              TableCalendar(
+                 calendarStyle: CalendarStyle(
+                 todayColor: Colors.amber
+               ),
+                headerStyle: HeaderStyle(
+                 centerHeaderTitle: true
+              ),
+              calendarController: _controller,),
             Padding(
               padding: EdgeInsets.all(20.0),
               child: TextField(
@@ -255,7 +268,7 @@ class DataTableDemoState extends State<DataTableDemo> {
                 ),
               ),
             ),
-            // Add an update button and a Cancel Button
+
             // show these buttons only when updating an employee
             _isUpdating
                 ? Row(
@@ -281,15 +294,10 @@ class DataTableDemoState extends State<DataTableDemo> {
             Expanded(
               child: _dataBody(),
             ),
-          ],
+            ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          _addEmployee();
-        },
-        child: Icon(Icons.add),
       ),
     );
   }
 }
+           
