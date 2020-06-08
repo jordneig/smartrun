@@ -10,6 +10,11 @@ SmartRun é um aplicativo mobile que visa facilitar as atividades da assessoria 
 * Facilitar o controle de turmas e alunos
 * Controlar os agendamentos de forma mais fácil e organizada
 
+## Instalação:
+* É necessário ter o flutter instalado, um servidor, neste projeto estamos utilizando o servidor local a partir do Xampp.
+* A pasta EmployeesDB deve ser salva na pasta htdocs do Xampp.
+* Alterar no arquivo lib/Services.dart o id do computador para o id do seu computador.
+
 ##  Autores: 
 | Nome                            | E-mail                   |
 | ------------------------------- | ------------------------ |
