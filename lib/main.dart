@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'DataTableDemo.dart';
+import 'Calendar.dart';
+import 'Add.dart';
+import 'Items.dart';
 
 void main() {
   runApp(
@@ -12,7 +14,8 @@ class HomeApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'SmartRun',
-      home: new DataTableDemo()
+      home: new DataTableDemo(),
+      
     );
     
   }
