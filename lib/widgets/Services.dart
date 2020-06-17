@@ -4,7 +4,7 @@ import 'package:http/http.dart'
 import 'Employee.dart';
  
 class Services {
-  static const ROOT = 'http://192.168.1.7/EmployeesDB/employee_actions.php';
+  static const ROOT = 'http://192.168.1.8/EmployeesDB/employee_actions.php';
   static const _CREATE_TABLE_ACTION = 'CREATE_TABLE';
   static const _GET_ALL_ACTION = 'GET_ALL';
   static const _ADD_EMP_ACTION = 'ADD_EMP';
@@ -54,12 +54,13 @@ class Services {
   }
  
   // Method to add employee to the database...
-  static Future<String> addEmployee(String firstName, String lastName) async {
+  static Future<String> addEmployee(String firstName, String lastName, String datatreino) async {
     try {
       var map = Map<String, dynamic>();
       map['action'] = _ADD_EMP_ACTION;
       map['first_name'] = firstName;
       map['last_name'] = lastName;
+      map['data_treino'] = datatreino;
       final response = await http.post(ROOT, body: map);
       print('addEmployee Response: ${response.body}');
       if (200 == response.statusCode) {
@@ -74,13 +75,14 @@ class Services {
  
   // Method to update an Employee in Database...
   static Future<String> updateEmployee(
-      String empId, String firstName, String lastName) async {
+      String empId, String firstName, String lastName, String datatreino) async {
     try {
       var map = Map<String, dynamic>();
       map['action'] = _UPDATE_EMP_ACTION;
       map['emp_id'] = empId;
       map['first_name'] = firstName;
       map['last_name'] = lastName;
+      map['data_treino'] = datatreino;
       final response = await http.post(ROOT, body: map);
       print('updateEmployee Response: ${response.body}');
       if (200 == response.statusCode) {
